@@ -29,6 +29,9 @@
 import React, { Component } from 'react'
 import Counter from './class-components/Counter'
 import UsingProps from './class-components/UsingProps'
+import Mounting from './class-components/life-cycle-methods/Mounting'
+import Updating from './class-components/life-cycle-methods/Updating'
+import Unmounting from './class-components/life-cycle-methods/Unmounting'
 // import Basic from './class-components/Bsic'
 
 export default class App extends Component {
@@ -37,7 +40,10 @@ export default class App extends Component {
       <div>
         {/* <Basic/> */}
         {/* <UsingProps name="Shanif"/> */}
-        <Counter/>
+        {/* <Counter/> */}
+        {/* <Mounting/> */}
+        {/* <Updating/> */}
+        <Unmounting/>
       </div>
     )
   }
