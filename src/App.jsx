@@ -6,8 +6,21 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import { UserApiProvider } from "./functional-components/hooks/useContext-Hook/dark&lightMode/user-list/UserApiContext"
-import UserList from "./functional-components/hooks/useContext-Hook/dark&lightMode/user-list/UserList"
+import Navbar from "./nested-routing/Navbar"
+
+// import { Route, Routes } from "react-router-dom"
+// import Products from "./dynamic-routing/Products"
+// import ProductDetailPage from "./dynamic-routing/ProductDetailPage"
+
+// import { Link, Route, Routes } from "react-router-dom"
+// import Home from "./react-router-dom/Home"
+// import About from "./react-router-dom/About"
+
+// import { TodoContext } from "./functional-components/hooks/work/TodoContext"
+// import TodoList from "./functional-components/hooks/work/TodoList"
+
+// import { UserApiProvider } from "./functional-components/hooks/useContext-Hook/dark&lightMode/user-list/UserApiContext"
+// import UserList from "./functional-components/hooks/useContext-Hook/dark&lightMode/user-list/UserList"
 
 // import Home from "./functional-components/hooks/useContext-Hook/dark&lightMode/Home"
 // import { ThemeProvider } from "./functional-components/hooks/useContext-Hook/dark&lightMode/ThemeContext"
@@ -52,9 +65,37 @@ function App() {
       {/* <ThemeProvider>
         <Home/>
       </ThemeProvider> */}
-      <UserApiProvider>
+      {/* <UserApiProvider>
         <UserList/>
-      </UserApiProvider>
+      </UserApiProvider> */}
+      {/* <TodoContext/> */}
+      {/* <TodoList/> */}
+
+      {/* ---------------react - router - dom ----------- */}
+      {/* ------1. ------basic routing ------------ */}
+
+      {/* <div>
+        <nav>
+          <Link to='/'>Home</Link> <br />
+          <Link to='/about'>About</Link>
+        </nav>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes> */}
+
+      {/* ---------2.----------dynamic routing--------- */}
+      {/* <Routes>
+        <Route path="/" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetailPage />} />
+      </Routes> */}
+
+      {/* -----------3.---------nested routing---------- */}
+      <Navbar
+
+
 
     </>
   )
