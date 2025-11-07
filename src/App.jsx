@@ -1,4 +1,10 @@
 
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import "./Components/Style.css"
 // import './App.css'
 // import Basic from './class-components/Bsic'
 // import Calling_function from './embedding-expression/Calling_function'
@@ -6,7 +12,20 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import Navbar from "./nested-routing/Navbar"
+// import Navbar from "./nested-routing/Navbar"
+// import Home from './nested-routing/pages/Home'
+// import About from './nested-routing/pages/About'
+// import Services from './nested-routing/pages/Services'
+// import WebDev from './nested-routing/pages/services/WebDev'
+// import AppDev from './nested-routing/pages/services/AppDev'
+// import Design from './nested-routing/pages/services/Design'
+
+// import { Route, Router, Routes } from "react-router-dom"
+// import Navbar from "./Components/Navbar"
+// import Home from "./pages/Home"
+// import About from "./pages/About"
+// import Contact from "./pages/Contact"
+
 
 // import { Route, Routes } from "react-router-dom"
 // import Products from "./dynamic-routing/Products"
@@ -93,14 +112,34 @@ function App() {
       </Routes> */}
 
       {/* -----------3.---------nested routing---------- */}
-      <Navbar
+      {/* <Navbar />
+      <div className="container-app "></div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} /> */}
+
+      {/* nested routing starts here */}
+      {/* <Route path='/services' element={<Services />} />
+        <Route path='web-development' element={<WebDev />} />
+        <Route path='app-development' element={<AppDev />} />
+        <Route path='design' element={<Design />} />
+
+      </Routes> */}
 
 
+      {/* -------------my- website------- */}
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+  
 
     </>
   )
 }
-export default App
+export default App;
 
 // {/* ---------------class-components--------------- */}
 // import React, { Component } from 'react'
