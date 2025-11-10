@@ -1,10 +1,10 @@
 
-import { Route, Routes } from 'react-router-dom'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import About from './Components/About'
-import Contact from './Components/Contact'
-import "./Components/Style.css"
+// import { Route, Routes } from 'react-router-dom'
+// import Navbar from './Components/Navbar'
+// import Home from './Components/Home'
+// import About from './Components/About'
+// import Contact from './Components/Contact'
+// import "./Components/Style.css"
 // import './App.css'
 // import Basic from './class-components/Bsic'
 // import Calling_function from './embedding-expression/Calling_function'
@@ -12,10 +12,15 @@ import "./Components/Style.css"
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
+import SimpleForm from "./form/SimpleForm";
+
+// import Items from "./react-keys/Items";
+// import RealWorld from "./react-keys/RealWorld";
+
 // import Navbar from "./nested-routing/Navbar"
 // import Home from './nested-routing/pages/Home'
 // import About from './nested-routing/pages/About'
-// import Services from './nested-routing/pages/Services'
+// import Services from './nested-routing/pages/services/Services'
 // import WebDev from './nested-routing/pages/services/WebDev'
 // import AppDev from './nested-routing/pages/services/AppDev'
 // import Design from './nested-routing/pages/services/Design'
@@ -128,13 +133,21 @@ function App() {
 
 
       {/* -------------my- website------- */}
-        <Navbar />
+      {/* <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
-  
+        </Routes> */}
+
+      {/* ----------react keys------------ */}
+      {/* <Items/> */}
+
+      {/* ---------real-world------- */}
+      {/* <RealWorld/> */}
+
+      {/* -----------form validation---------- */}
+        <SimpleForm/>
 
     </>
   )
