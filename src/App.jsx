@@ -12,7 +12,13 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import SimpleForm from "./form/SimpleForm";
+
+import Crud from "./local-storage/Crud";
+
+
+// import Form from "./form/Form";
+
+// import SimpleForm from "./form/SimpleForm";
 
 // import Items from "./react-keys/Items";
 // import RealWorld from "./react-keys/RealWorld";
@@ -147,7 +153,13 @@ function App() {
       {/* <RealWorld/> */}
 
       {/* -----------form validation---------- */}
-        <SimpleForm/>
+        {/* <SimpleForm/> */}
+        {/* <Form/> */}
+
+        {/* --------local-storage--------- */}
+        <Crud/>
+        
+
 
     </>
   )
