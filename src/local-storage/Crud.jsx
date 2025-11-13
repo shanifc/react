@@ -12,6 +12,7 @@ const Crud = () => {
 
     const [users, setUsers] = useState([]);
     const [editMode, setEditMode] = useState(false);
+
     // const [error, setErros] = useState([]);
     const [error, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false);
@@ -97,7 +98,29 @@ const Crud = () => {
 
     const handleEdit = (user) => {
         setFormData(user);
+        setEditMode(true);
+    }
+
+    const handleCancel = () => {
+        setFormData({ id: '', name: '', email: '', age: '' });
         setEditMode(false);
+    }
+
+    const handleDelete = (id) => {
+        setUsers(users.filter(user => user.id !== id));
+    }
+
+    const handleClearAll = () => {
+        if (window.confirm('Are you sure you want to clear all data? This action canot be undone.')) {
+            setUsers([]);
+            localStorage.removeItem("users");
+            // also clear the form if in edit mode
+            if (editMode) {
+                setFormData({ id: '', name: '', age: '', email: '' });
+                setEditMode(false);
+                setErrors({});
+            }
+        }
     }
 
     return (
@@ -125,7 +148,7 @@ const Crud = () => {
                 <button type='submit'>{editMode ? 'Update User' : 'Add User'}</button>
                 {
                     editMode && (
-                        <button type='button'></button>
+                        <button type='button' onClick={handleCancel} style={{ marginLeft: '10px' }}>Cancel</button>
                     )
                 }
             </form>
@@ -135,6 +158,19 @@ const Crud = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                 <h2>User List</h2>
                 {/* clear data button  */}
+                {users.length > 0 && (
+                    <button
+                        style={{
+                            background: '#dc345',
+                            color: 'white',
+                            border: 'none',
+                            padding: '8px 12px',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            marginLeft: '30px'
+                        }}
+                    >Clear All Data</button>
+                )}
             </div>
 
             {users.length > 0 ? (
@@ -155,7 +191,7 @@ const Crud = () => {
                                 <td>{us.age}</td>
                                 <td>
                                     <button onClick={() => handleEdit(us)}>Edit</button>
-                                    <button style={{ marginLeft: '10px' }}>Delete</button>
+                                    <button onClick={() => handleDelete(us.id)} style={{ marginLeft: '10px' }}>Delete</button>
                                 </td>
                             </tr>
                         ))}
