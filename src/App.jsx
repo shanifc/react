@@ -12,9 +12,16 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
+import Todo from "./todo/Todo";
+
+// import Banner from "./my-website/Banner";
+// import Footer from "./my-website/Footer";
+// import Navbar from "./my-website/Navbar";
+
+
 // import ProfileForm from "./local-storage/ProfileForm";
 
-import Crud from "./local-storage/Crud";
+// import Crud from "./local-storage/Crud";
 
 
 // import Form from "./form/Form";
@@ -158,10 +165,19 @@ function App() {
         {/* <Form/> */}
 
         {/* --------local-storage--------- */}
-        <Crud/>
+        {/* <Crud/> */}
         {/* <ProfileForm/> */}
-        
+
+        {/* ------------my-website----------- */}
+        {/* <Navbar/>
+        <Banner/>
+        <Footer/> */}
+
+        {/* -------------Todo App----------- */}
+        <Todo/>
+    
      </>
+     
   )
 }
 export default App;
