@@ -4,6 +4,9 @@ import './Todo.css';
 const Todo = () => {
     const [task, setTask] = useState(" ");
     const [tasks, setTasks] = useState([]);
+    const [pendingTasks, setPendingTasks] = useState([]);
+    const [completedTasks, setCompletedTasks] = useState([]);
+    const [showTooltip, setShowTooltip] = useState(false);
 
     const addTask = () => {
         if (task.trim() === " ") return;

@@ -12,7 +12,11 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import Todo from "./todo/Todo";
+import AxiosPost from "./axios/AxiosPost";
+
+// import AxiosGet from "./axios/AxiosGet";
+
+// import Todo from "./todo/Todo";
 
 // import Banner from "./my-website/Banner";
 // import Footer from "./my-website/Footer";
@@ -174,7 +178,11 @@ function App() {
         <Footer/> */}
 
         {/* -------------Todo App----------- */}
-        <Todo/>
+        {/* <Todo/> */}
+
+        {/* -------------Axios---------  */}
+        {/* <AxiosGet/> */}
+        <AxiosPost/>
     
      </>
      
