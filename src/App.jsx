@@ -12,7 +12,11 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import AxiosPost from "./axios/AxiosPost";
+import Player from "./functional-components/hooks/useRef/Player";
+
+// import AxiosDelete from "./axios/AxiosDelete";
+// import AxiosPut from "./axios/AxiosPut";
+// import AxiosPost from "./axios/AxiosPost";
 
 // import AxiosGet from "./axios/AxiosGet";
 
@@ -102,6 +106,7 @@ function App() {
       {/* <ProfileForm/> */}
       {/* <RunEffect/> */}
       {/* <RunEffectSpecifiv/> */}
+      <Player/>
 
       {/* ------------useContext hook----------- */}
       {/* <ThemeProvider>
@@ -182,7 +187,9 @@ function App() {
 
         {/* -------------Axios---------  */}
         {/* <AxiosGet/> */}
-        <AxiosPost/>
+        {/* <AxiosPost/> */}
+        {/* <AxiosDelete/> */}
+        {/* <AxiosPut/> */}
     
      </>
      
