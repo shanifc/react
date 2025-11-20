@@ -12,7 +12,16 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import Player from "./functional-components/hooks/useRef/Player";
+import { Route, Routes } from "react-router-dom";
+import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
+import ProductDetails from "./desingns/dynamic -routing-rw-example/ProductDetails";
+
+
+// import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
+
+// import Parent from "./functional-components/hooks/useCallBack/Parent";
+
+// import Player from "./functional-components/hooks/useRef/Player";
 
 // import AxiosDelete from "./axios/AxiosDelete";
 // import AxiosPut from "./axios/AxiosPut";
@@ -106,7 +115,7 @@ function App() {
       {/* <ProfileForm/> */}
       {/* <RunEffect/> */}
       {/* <RunEffectSpecifiv/> */}
-      <Player/>
+      {/* <Player/> */}
 
       {/* ------------useContext hook----------- */}
       {/* <ThemeProvider>
@@ -170,29 +179,38 @@ function App() {
       {/* <RealWorld/> */}
 
       {/* -----------form validation---------- */}
-        {/* <SimpleForm/> */}
-        {/* <Form/> */}
+      {/* <SimpleForm/> */}
+      {/* <Form/> */}
 
-        {/* --------local-storage--------- */}
-        {/* <Crud/> */}
-        {/* <ProfileForm/> */}
+      {/* --------local-storage--------- */}
+      {/* <Crud/> */}
+      {/* <ProfileForm/> */}
 
-        {/* ------------my-website----------- */}
-        {/* <Navbar/>
+      {/* ------------my-website----------- */}
+      {/* <Navbar/>
         <Banner/>
         <Footer/> */}
 
-        {/* -------------Todo App----------- */}
-        {/* <Todo/> */}
+      {/* -------------Todo App----------- */}
+      {/* <Todo/> */}
 
-        {/* -------------Axios---------  */}
-        {/* <AxiosGet/> */}
-        {/* <AxiosPost/> */}
-        {/* <AxiosDelete/> */}
-        {/* <AxiosPut/> */}
-    
-     </>
-     
+      {/* -------------Axios---------  */}
+      {/* <AxiosGet/> */}
+      {/* <AxiosPost/> */}
+      {/* <AxiosDelete/> */}
+      {/* <AxiosPut/> */}
+
+      {/* <Parent/> */}
+
+      {/* -------------designns/dynamic routing-rw-example----------- */}
+      {/* <ProductPage/> */}
+      <Routes>
+        <Route path='/' element={<ProductPage />} />
+        <Route path='/products/:id' element={<ProductDetails />} />
+      </Routes>
+
+    </>
+
   )
 }
 export default App;
