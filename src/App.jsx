@@ -12,14 +12,19 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
-import { Route, Routes } from "react-router-dom";
-import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
-import ProductDetails from "./desingns/dynamic -routing-rw-example/ProductDetails";
+// import Counter from "./functional-components/hooks/useRdeuce-Hook/Counter";
+
+// import UseLayOutEffect from "./functional-components/hooks/useEffect-Hook/UseLayOutEffect";
+
+// import { Route, Routes } from "react-router-dom";
+// import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
+// import ProductDetails from "./desingns/dynamic -routing-rw-example/ProductDetails";
 
 
 // import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
 
 // import Parent from "./functional-components/hooks/useCallBack/Parent";
+import UseMemo from "./functional-components/hooks/useMemo/useMemo";
 
 // import Player from "./functional-components/hooks/useRef/Player";
 
@@ -201,13 +206,16 @@ function App() {
       {/* <AxiosPut/> */}
 
       {/* <Parent/> */}
+      {/* <UseLayOutEffect/> */}
+      {/* <Counter/> */}
+      <UseMemo/>
 
       {/* -------------designns/dynamic routing-rw-example----------- */}
       {/* <ProductPage/> */}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<ProductPage />} />
         <Route path='/products/:id' element={<ProductDetails />} />
-      </Routes>
+      </Routes> */}
 
     </>
 

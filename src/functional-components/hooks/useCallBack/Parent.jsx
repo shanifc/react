@@ -5,7 +5,7 @@ const Parent = () => {
     const [count, setCount] = useState(0);
     const [text, setText] = useState("");
 
-    // useCallback → memoizes the function
+    // useCallback - memoizes the function
     const handleChildClick = useCallback(() => {
         alert("Child button clicked!");
     }, []);
