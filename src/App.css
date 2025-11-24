@@ -1,4 +1,4 @@
-/* .container-app { 
+/* /* .container-app { 
   max-width: 1280px; 
   margin-left: auto;  
   margin-right: auto;
@@ -15,3 +15,97 @@
   font-family: "Poppins", sans-serif;
   background-color: #f8fafc;
 } */
+
+/* -----portfolio css---- */
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #0a1f44;
+}
+
+.navbar h2 {
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 25px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #0d2b63;
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.skill-box,
+.project-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-card,
+.project-card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.project-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;

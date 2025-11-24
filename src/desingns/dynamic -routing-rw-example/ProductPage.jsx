@@ -3,6 +3,7 @@ import './ProductPage.css'
 import { products } from './Data/Products'
 import ProductCard from './ProductCard'
 import { Link } from 'react-router-dom'
+import ProductDetails from './ProductDetails'
 
 const ProductPage = () => {
   return (
