@@ -12,6 +12,8 @@
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/Welcome'
 
+import BasicHookForm from "./react-hook-form/BasicHookForm";
+
 // import About from "./Portfolio/About";
 // import Contact from "./Portfolio/Contact";
 // import Hero from "./Portfolio/Hero";
@@ -23,9 +25,9 @@
 
 // import UseLayOutEffect from "./functional-components/hooks/useEffect-Hook/UseLayOutEffect";
 
-import { Route, Routes } from "react-router-dom";
-import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
-import ProductDetails from "./desingns/dynamic -routing-rw-example/ProductDetails";
+// import { Route, Routes } from "react-router-dom";
+// import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
+// import ProductDetails from "./desingns/dynamic -routing-rw-example/ProductDetails";
 
 
 // import ProductPage from "./desingns/dynamic -routing-rw-example/ProductPage";
@@ -219,18 +221,21 @@ function App() {
 
       {/* -------------designns/dynamic routing-rw-example----------- */}
       {/* <ProductPage/> */}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<ProductPage />} />
         <Route path='/products/:id' element={<ProductDetails />} />
-      </Routes>
+      </Routes> */}
 
       {/* -------------portfolio------------ */}
       {/* <Navbar/>
-<Hero/>
-<About/>
-<Skills/>
-<Projects/>
-<Contact/> */}
+        <Hero/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/> */}
+
+        {/* -----------react-hook-form---------- */}
+        <BasicHookForm/>
 
 
     </>
